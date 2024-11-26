@@ -2766,5 +2766,8 @@ input, select, textarea {
   
   
   
-  
+    .project-description strong, 
+  .project-description b {
+	  font-weight: bold;
+  }
   
