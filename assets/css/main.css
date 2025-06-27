@@ -2770,4 +2770,111 @@ input, select, textarea {
   .project-description b {
 	  font-weight: bold;
   }
-  
+
+/* Inline Project Tools Section */
+.project-tools-inline {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px; /* Spacing between title and tools */
+    flex-wrap: wrap;
+}
+
+.project-tools-inline strong {
+    font-size: 16px;
+    font-weight: bold; /* Bold styling for the title */
+    color: #333; /* Darker color for emphasis */
+}
+
+/* Inline Tools List */
+.tools-list-inline {
+    display: flex;
+    gap: 8px; /* Reduced spacing between tools */
+}
+
+/* Individual Tool Styles */
+.tool {
+    padding: 2px 8px; /* Smaller padding for tighter fit */
+    border-radius: 4px; /* Reduced border radius */
+    font-size: 12px; /* Reduced font size */
+    font-weight: bold;
+    background-color: #d3d3d3; /* Uniform grey background */
+    color: black; /* Black text color for contrast */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+/* Projects Grid */
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Spacing between projects */
+    justify-content: space-between;
+}
+
+/* Individual Project Containers */
+.project-container {
+    flex: 0 1 calc(50% - 20px); /* 50% width minus spacing */
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: #f9f9f9; /* Optional: Add a background for better appearance */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+/* Responsive Design: Make projects full-width on smaller screens */
+@media (max-width: 768px) {
+    .project-container {
+        flex: 0 1 100%; /* Full width */
+    }
+}
+
+
+.project-images img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain; /* Ensures the entire image is visible */
+    border-radius: 8px;
+    background-color: #f0f0f0; /* Adds a background to fill any empty space */
+}
+
+
+
+
+
+/* Project Container as a Flexbox */
+.project-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Push "View More" to the bottom */
+    height: 100%; /* Ensure container stretches to fit */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+/* View More Button Placement */
+.view-more-btn {
+    align-self: center; /* Center the button horizontally */
+    margin-top: auto; /* Push the button to the bottom */
+}
+
+
+
+
+
+
+
+
+
+
+
